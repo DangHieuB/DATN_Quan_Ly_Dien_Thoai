@@ -1,0 +1,34 @@
+viho-vue-issues-in code:
+
+1. code repeatition: Use v-for loops and JSON to loop through the same objects and instead of loreum text=> keep lorem in a variable and use that variable 
+
+example: pages>advance>ribbons>coloredBreadcrumbs (problem) , ribbons -- by Krupa ma'am
+
+2. folder structure: --by Krupa ma'am
+
+rename components folder to layout and pages folder to components.
+
+3. unnecessary files : src>constants>layout : remove unnecessary files
+
+
+4. used code of cuba in multiple files, things link :
+check the classes used in viho and add the logic accordingly
+
+example:
+
+if(layout === 'Tokyo' || layout === 'Moscow' || layout === 'Rome') {
+ this.$store.state.menu.togglesidebar = true; 
+ }
+
+click="handlePageLayputs( 'horizontal-wrapper enterprice-type', 'Singapore')
+
+these classes are from cuba-admin theme, check and change
+
+5. design issues in rtl , check if proper files are being imported and rtl is added at proper place.
+
+6. /gallery/gallery-masonary-desc.. design problem
+compare html with vue page, image and text are too close in vue, maybe it is the problem of code structure.
+
+7. remove console.logs from every files
+
+8. remove extra files like, viho.zip or else you will forget at last.

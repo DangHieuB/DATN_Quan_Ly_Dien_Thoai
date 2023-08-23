@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "path": "/",
+      "title": "Quản lí điện thoại",
+      "icon": "home",
+      "type": "link",
+      "active": true
+    },
+    {
+      "path": "/",
+      "title": "Quản lí kho",
+      "icon": "headphones",
+      "type": "redirect",
+      "active": true
+    },
+    {
+      "path": "/",
+      "title": "Documentation",
+      "icon": "file-text",
+      "type": "redirect",
+      "active": true
+    },
+    {
+      "path": "/",
+      "title": "ABC",
+      "icon": "file-text",
+      "type": "link",
+      "active": true
+    }
+  ]
+}

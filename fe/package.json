@@ -1,0 +1,53 @@
+{
+  "name": "PHONESTORE",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "clean": "del-cli -f '../src/main/resources/static/*' '../src/main/resources/templates/index.html'",
+    "create-dirs": "mkdirp ../src/main/resources/static ../src/main/resources/templates -m 755",
+    "copy-artifacts": "ncp dist/favicon.* ../src/main/resources/static && ncp dist ../src/main/resources/static && cpx \"dist/index.html\" \"../src/main/resources/templates\" && del-cli -f '../src/main/resources/static/index.html'",
+    "deploy": "npm-run-all build clean create-dirs copy-artifacts"
+  },
+  "dependencies": {
+    "@kyvg/vue3-notification": "^2.9.1",
+    "@meforma/vue-toaster": "^1.3.0",
+    "@vue-leaflet/vue-leaflet": "^0.10.1",
+    "@vueform/multiselect": "^2.5.3",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.2",
+    "core-js": "^3.8.3",
+    "dropzone-vue": "^0.1.11",
+    "feather-icons": "^4.29.0",
+    "pinia": "^2.1.4",
+    "vue": "^3.3.4",
+    "vue-axios": "^3.5.2",
+    "vue-feather": "^2.0.0",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^5.1.1",
+    "cross-port-killer": "^1.0.1",
+    "del-cli": "^1.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "http-proxy-middleware": "^2.0.6",
+    "mkdirp": "^0.5.1",
+    "mockjs": "^1.0.1-beta3",
+    "ncp": "^2.0.0",
+    "npm-run-all": "^4.1.3",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0"
+  }
+}
