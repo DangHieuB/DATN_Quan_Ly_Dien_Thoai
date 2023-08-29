@@ -1,6 +1,9 @@
 # starter-kit
 
 ## Project setup
+```
+npm install chart.js
+```
 
 ```
 npm install
