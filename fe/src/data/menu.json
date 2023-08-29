@@ -8,22 +8,22 @@
       "active": true
     },
     {
-      "path": "/",
-      "title": "Quản lí kho",
+      "path": "/QLNV",
+      "title": "Quản lí nhân viên",
       "icon": "headphones",
-      "type": "redirect",
+      "type": "link",
       "active": true
     },
     {
       "path": "/",
-      "title": "Documentation",
+      "title": "Chính sách giảm giá",
       "icon": "file-text",
-      "type": "redirect",
+      "type": "link",
       "active": true
     },
     {
-      "path": "/",
-      "title": "ABC",
+      "path": "/Thongke",
+      "title": "Thống kê",
       "icon": "file-text",
       "type": "link",
       "active": true
